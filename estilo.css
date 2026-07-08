@@ -1,11 +1,10 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Boa prática para evitar que o padding altere o tamanho dos elementos */
+    box-sizing: border-box; 
 }
 
-/* Nota: No seu HTML você usou a tag <header>. 
-   Para que essa classe funcione, adicione class="cabecalho" na sua tag <header> do HTML */
+
 .cabecalho {
     padding: 15px 25px;
     display: flex;
@@ -17,13 +16,13 @@
 .cartao {
     width: 260px;
     height: 200px;
-    perspective: 1000px; /* Ajuda a dar o efeito 3D ao virar o cartão */
+    perspective: 1000px;
 }
 
 .cartao-imagem {
     width: 100%;
-    height: 120px; /* Define uma altura para a imagem não quebrar o layout */
-    object-fit: cover; /* Faz a imagem se adaptar bem ao espaço */
+    height: 120px;
+    object-fit: cover; 
     border-radius: 12px 12px 0 0;
 }
 
@@ -43,7 +42,7 @@ main {
 
 .cabecalho-link {
     color: darkolivegreen;
-    text-decoration: none; /* Remove o sublinhado padrão do link */
+    text-decoration: none; 
 }
 
 h1 {
@@ -74,10 +73,9 @@ footer {
     width: 100%;
     height: 100%;
     border-radius: 12px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Ponto e vírgula corrigido aqui */
-    backface-visibility: hidden; /* Esconde o verso quando não estiver virado */
-    background-color: white; /* Garante um fundo para os textos não embaralharem */
-}
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); 
+    backface-visibility: hidden; 
+    background-color: white;  }
 
 .cartao-verso {
     transform: rotateY(180deg);
