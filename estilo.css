@@ -46,14 +46,14 @@ main {
 }
 
 h1 {
-    color: aliceblue;
+    color: rgb(25, 42, 53);
     font-size: 24px;
 }
 
 footer {
     background-color: beige;
     padding: 15px 25px;
-    color: rgb(116, 140, 161);
+    color: rgb(0, 136, 255);
 }
 
 .cartao-interno {
