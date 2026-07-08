@@ -1,8 +1,11 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /* Boa prática para evitar que o padding altere o tamanho dos elementos */
 }
 
+/* Nota: No seu HTML você usou a tag <header>. 
+   Para que essa classe funcione, adicione class="cabecalho" na sua tag <header> do HTML */
 .cabecalho {
     padding: 15px 25px;
     display: flex;
@@ -14,10 +17,14 @@
 .cartao {
     width: 260px;
     height: 200px;
+    perspective: 1000px; /* Ajuda a dar o efeito 3D ao virar o cartão */
 }
 
 .cartao-imagem {
     width: 100%;
+    height: 120px; /* Define uma altura para a imagem não quebrar o layout */
+    object-fit: cover; /* Faz a imagem se adaptar bem ao espaço */
+    border-radius: 12px 12px 0 0;
 }
 
 body {
@@ -31,11 +38,12 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 20px;
 }
 
 .cabecalho-link {
     color: darkolivegreen;
-    text-decoration: dotted;
+    text-decoration: none; /* Remove o sublinhado padrão do link */
 }
 
 h1 {
@@ -45,12 +53,14 @@ h1 {
 
 footer {
     background-color: beige;
-     padding: 15px 25px;
-     color: rgb(116, 140, 161);
+    padding: 15px 25px;
+    color: rgb(116, 140, 161);
 }
 
 .cartao-interno {
     position: relative;
+    width: 100%;
+    height: 100%;
     transition: transform 0.8s;
     transform-style: preserve-3d;
 }
@@ -60,10 +70,13 @@ footer {
 }
 
 .cartao-frente, .cartao-verso {
- position: absolute;
- border-radius: 12px;
- box-shadow: 0 6px 12px; rgba(0, 0, 0, 0.15)
- backface-visibility: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Ponto e vírgula corrigido aqui */
+    backface-visibility: hidden; /* Esconde o verso quando não estiver virado */
+    background-color: white; /* Garante um fundo para os textos não embaralharem */
 }
 
 .cartao-verso {
@@ -73,4 +86,5 @@ footer {
 section {
     display: flex;
     gap: 20px;
+    margin-top: 20px;
 }
