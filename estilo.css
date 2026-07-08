@@ -32,4 +32,9 @@ main {
 
 .cabecalho-link {
     color: darkolivegreen;
+    text-decoration: dotted;
+}
+
+h1 {
+    color: aliceblue;
 }
