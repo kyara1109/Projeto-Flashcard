@@ -10,7 +10,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: beige;
+    background-color: rgb(190, 190, 166);
 }
 
 .cartao {
@@ -41,19 +41,19 @@ main {
 }
 
 .cabecalho-link {
-    color: darkolivegreen;
+    color: rgb(131, 148, 101);
     text-decoration: none; 
 }
 
 h1 {
-    color: rgb(25, 42, 53);
+    color: rgb(0, 0, 0);
     font-size: 24px;
 }
 
 footer {
     background-color: beige;
     padding: 15px 25px;
-    color: rgb(0, 136, 255);
+    color: rgb(0, 0, 0);
 }
 
 .cartao-interno {
@@ -75,7 +75,7 @@ footer {
     border-radius: 12px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); 
     backface-visibility: hidden; 
-    background-color: white;  }
+    background-color: rgb(133, 86, 86);  }
 
 .cartao-verso {
     transform: rotateY(180deg);
