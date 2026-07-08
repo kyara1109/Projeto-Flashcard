@@ -8,7 +8,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: azure@;
+    background-color: beige;
 }
 
 .cartao {
@@ -28,4 +28,8 @@ body {
 
 main {
     flex: 1;
+}
+
+.cabecalho-link {
+    color: darkolivegreen;
 }
